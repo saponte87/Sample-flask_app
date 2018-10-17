@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <title>{% block title %} {% endblock %}</title>
+    {% end block %}
+</head>
+<body>
+        <h1>Welcome to our app</h1>
+        <div id="content">{% block content %} {% endblock $}</div>
+
+        <div id="content">{% block footer %} {% endblock $}</div>
+
+</body>
+</html>
